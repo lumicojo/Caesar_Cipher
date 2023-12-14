@@ -1,8 +1,8 @@
-require 'byebug'
+#require 'byebug'
 def substrings(word, dictionary)
   word = word.downcase
   result = Hash.new(0)
-byebug
+#byebug
   dictionary.each do |substring|
     substring = substring.downcase
     count = word.scan(substring).length

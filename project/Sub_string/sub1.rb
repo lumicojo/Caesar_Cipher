@@ -2,7 +2,7 @@
 def substrings(string, dict)
   hash = Hash.new
   string = string.downcase
-byebug
+#byebug
   dict.each do |word|
     hash[word] = string.scan(word).size if string.include?(word)
   end
